@@ -1,0 +1,14 @@
+name = "workers-link-shortener"
+main = "build/worker/shim.mjs"
+compatibility_date = "2023-06-28"
+
+[build]
+# imo this should be provided by `npx wrangler`
+command = "(command -v worker-build >/dev/null || cargo install -q worker-build) && worker-build --release"
+
+[[kv_namespaces]]
+binding = "workers_link_shortener"
+id = "YOUR_ID_GOES_HERE"
+
+
+
