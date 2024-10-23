@@ -10,7 +10,7 @@ and uses [KV](https://developers.cloudflare.com/workers/runtime-apis/kv) to stor
 ## Prerequisites
 
 You'll want [`npx`](https://www.npmjs.com/package/npx) to run the
-`wrangler` command. I put the most relevant commands into a `Justfile`
+[`wrangler`](https://developers.cloudflare.com/workers/wrangler/) command. I put the most relevant commands into a `Justfile`
 so you can run them with [just](https://github.com/casey/just).
 Clearly, you might want to install `just`. Otherwise, you can run
 the commands directly. If you encounter other challenges, please
@@ -63,6 +63,10 @@ deploy it to Cloudflare. It will return a URL to you like
 Once your worker is running, you can add a custom domain. See the
 [Cloudflare documentation on custom domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/). And there you have it,
 your own link shortener.
+
+I use this app with a custom short domain, e.g. `https://802.mba/activity1` to
+redirect my students in class to a particular page online where we have some
+in-class activity.
 
 ## License
 
