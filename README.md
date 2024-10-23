@@ -1,8 +1,6 @@
-<div style="text-align: center;">
-<h1>
+<h1 align="center">
    🔗 Workers link shortener 🔗
 </h1>
-</div>
 
 This is a dead-simple link shortener written
 in [Rust](https://www.rust-lang.org/) that runs
